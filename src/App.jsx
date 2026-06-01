@@ -369,9 +369,10 @@ export default function App() {
         <p className="text-sm text-neutral-300 mt-1">Visual-first RT-1523 style face panel for classroom SC setup practice.</p>
       </div>
 
-      <motion.div initial={{ scale: 0.98, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="w-full max-w-7xl rounded-xl bg-[#3f4a39] border-[6px] border-[#171c15] shadow-2xl p-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.08),transparent_35%),radial-gradient(circle_at_70%_80%,rgba(0,0,0,0.28),transparent_45%)] pointer-events-none" />
-        <div className="relative grid grid-cols-[285px_minmax(500px,1fr)_300px] gap-5 items-center min-h-[500px]">
+      <div className="w-full overflow-x-auto pb-4 touch-pan-x">
+        <motion.div initial={{ scale: 0.98, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="min-w-[1200px] rounded-xl bg-[#3f4a39] border-[6px] border-[#171c15] shadow-2xl p-6 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.08),transparent_35%),radial-gradient(circle_at_70%_80%,rgba(0,0,0,0.28),transparent_45%)] pointer-events-none" />
+          <div className="relative grid grid-cols-[285px_minmax(500px,1fr)_300px] gap-5 items-center min-h-[500px]">
           <div className="h-full rounded-l-xl bg-[#536049] border-2 border-[#30382d] p-4 flex flex-col justify-between relative">
             <div className="pt-6 pl-6"><CoaxConnector /></div>
             <div className="pb-2"><FunctionKnob value={fctn} onChange={handleFctn} /></div>
@@ -400,12 +401,13 @@ export default function App() {
             <div className="absolute bottom-[-2px] right-10 text-sm font-black text-neutral-300 tracking-wider">RXMT</div>
           </div>
 
-          <div className="h-full rounded-r-xl bg-[#536049] border-2 border-[#30382d] p-5 relative flex flex-col justify-center gap-14">
-            <RoundConnector label={<>AUD/<br />FILL</>} />
-            <RoundConnector label={<>AUD/<br />DATA</>} />
+            <div className="h-full rounded-r-xl bg-[#536049] border-2 border-[#30382d] p-5 relative flex flex-col justify-center gap-14">
+              <RoundConnector label={<>AUD/<br />FILL</>} />
+              <RoundConnector label={<>AUD/<br />DATA</>} />
+            </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
 
       <div className="w-full max-w-7xl grid lg:grid-cols-[1fr_1fr] gap-4">
         <div className="rounded-2xl bg-neutral-900 border border-neutral-800 p-4 shadow">
