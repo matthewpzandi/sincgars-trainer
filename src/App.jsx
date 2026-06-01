@@ -383,7 +383,7 @@ export default function App() {
               <div className="grid grid-cols-4 text-center text-3xl font-black text-neutral-100 tracking-wider mb-1 px-5">
                 <div>PWR</div><div>MODE</div><div>CHAN</div><div>CMSC</div>
               </div>
-              <div className="h-31 bg-[#aeb39b] border-[10px] border-[#2a3029] rounded-lg shadow-inner text-neutral-900 font-mono flex flex-col justify-center px-6 text-3xl tracking-[0.12em] mb-7">
+              <div className="h-[124px] bg-[#aeb39b] border-[10px] border-[#2a3029] rounded-lg shadow-inner text-neutral-900 font-mono flex flex-col justify-center px-6 text-3xl tracking-[0.12em] mb-7">
                 <div className="grid grid-cols-4 text-center font-black">
                   <div>{lcd.pwr}</div><div>{lcd.mode}</div><div>{lcd.chan}</div><div>{lcd.cmsc}</div>
                 </div>
