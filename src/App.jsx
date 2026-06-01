@@ -369,7 +369,7 @@ export default function App() {
         <p className="text-sm text-neutral-300 mt-1">Visual-first RT-1523 style face panel for classroom SC setup practice.</p>
       </div>
 
-      <div className="w-full overflow-x-auto pb-4 touch-pan-x">
+      <div className="w-full overflow-x-auto overflow-y-visible pb-4 touch-auto">
         <motion.div initial={{ scale: 0.98, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="min-w-[1200px] rounded-xl bg-[#3f4a39] border-[6px] border-[#171c15] shadow-2xl p-6 relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.08),transparent_35%),radial-gradient(circle_at_70%_80%,rgba(0,0,0,0.28),transparent_45%)] pointer-events-none" />
           <div className="relative grid grid-cols-[285px_minmax(500px,1fr)_300px] gap-5 items-center min-h-[500px]">
