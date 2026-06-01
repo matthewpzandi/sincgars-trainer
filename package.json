@@ -1,4 +1,4 @@
-{"scripts":{"de{
+{
   "scripts": {
     "dev": "vite",
     "build": "vite build",
